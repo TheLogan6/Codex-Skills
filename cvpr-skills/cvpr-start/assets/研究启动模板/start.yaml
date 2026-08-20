@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "start_id": "START-001",
+  "version": 1,
+  "status": "proposed",
+  "created_at": null,
+  "updated_at": null,
+  "input": {
+    "kind": "research_scope",
+    "research_scope": "",
+    "seed_paper_refs": [],
+    "failure_evidence_ref": null,
+    "previous_start_ref": null,
+    "reused_candidate_refs": []
+  },
+  "literature": {
+    "search_cutoff_date": null,
+    "recency_window": "",
+    "added_papers": [],
+    "qualified_count": 0,
+    "registry_ref": ".cvpr/literature/文献注册表.jsonl",
+    "problem_status_matrix_ref": ".cvpr/literature/问题状态矩阵.yaml"
+  },
+  "user_material_check": {
+    "status": "not_provided",
+    "input_refs": [],
+    "findings": [],
+    "evidence_refs": []
+  },
+  "problem_statuses": [],
+  "candidates": [],
+  "someagents_review": {
+    "mode": "B",
+    "status": "pending",
+    "input_snapshot_id": null,
+    "role_results": [],
+    "covered_axes": [],
+    "minority_findings": [],
+    "unresolved_blockers": [],
+    "final_verdict": "pending"
+  },
+  "discussion": {
+    "substantive_rounds": 0,
+    "rounds": []
+  },
+  "final_idea": {
+    "idea_id": null,
+    "user_confirmed": false,
+    "confirmed_at": null,
+    "confirmation_evidence_ref": null,
+    "research_problem": "",
+    "core_hypothesis": "",
+    "expected_contributions": [],
+    "conditions": [],
+    "boundaries": [],
+    "falsification_conditions": [],
+    "preliminary_acceptance_targets": []
+  },
+  "blockers": [],
+  "supersedes": null
+}

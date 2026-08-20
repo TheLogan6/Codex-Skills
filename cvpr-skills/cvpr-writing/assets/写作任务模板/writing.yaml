@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "task_id": "WRITING-001",
+  "status": "proposed",
+  "mode": "argument_and_outline",
+  "source_context": {
+    "project_mode": "standalone",
+    "snapshot_ref": null,
+    "result_ref": null,
+    "claims_authority_ref": null,
+    "scope_note": "仅依据用户提供的材料进行独立写作。"
+  },
+  "axes": {
+    "paper_type": "method_algorithm",
+    "sections": ["introduction"],
+    "language": "english",
+    "venue": "generic"
+  },
+  "input_artifacts": [],
+  "argument": {
+    "central_claim_id": "",
+    "one_sentence_argument": "",
+    "contribution_claim_ids": [],
+    "outline_ref": null,
+    "outline_confirmation": {
+      "status": "not_required",
+      "decision_ref": null
+    }
+  },
+  "claim_bindings": [],
+  "terminology": [],
+  "symbols": [],
+  "numeric_mentions": [],
+  "missing_evidence": [],
+  "revision_changes": [],
+  "output_artifacts": [],
+  "blockers": []
+}

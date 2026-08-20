@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Result"
+  short_description: "二次复核 DO 最终结果并经三位独立审稿人决定论文或 IDEA 循环"
+  default_prompt: "使用 $cvpr-result 对 cvpr-do 的最终判定执行三位独立审稿人复核，并形成用户呈报与后续路由。"

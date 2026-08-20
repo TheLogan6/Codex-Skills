@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "review_id": "PR-001",
+  "version": 1,
+  "status": "proposed",
+  "created_at": null,
+  "updated_at": null,
+  "snapshot": {
+    "snapshot_id": "",
+    "frozen_at": null,
+    "immutable": true,
+    "manifest_digest": "",
+    "files": []
+  },
+  "scope": {
+    "level": "full",
+    "manuscript_refs": [],
+    "paper_audit_ref": null,
+    "result_snapshot_ref": null,
+    "venue": null,
+    "venue_requirements_ref": null,
+    "assessment_boundary": "",
+    "missing_materials": []
+  },
+  "orchestration": {
+    "skill": "cvpr-someagents",
+    "mode": "B",
+    "requested_reviewers": 3,
+    "completed_reviewers": 0,
+    "same_snapshot": true,
+    "peer_outputs_hidden_until_completion": true
+  },
+  "axes": [
+    "contribution_novelty",
+    "technical_correctness",
+    "experimental_rigor_fairness",
+    "reproducibility",
+    "clarity",
+    "limitations_ethics"
+  ],
+  "reviewer_reports": [],
+  "synthesis": {
+    "status": "pending",
+    "finding_registry": [],
+    "all_finding_ids": [],
+    "consensus_finding_keys": [],
+    "minority_finding_keys": [],
+    "disagreements": [],
+    "unresolved_blocking_finding_keys": [],
+    "limitations": [],
+    "next_actions": []
+  },
+  "supersedes": null
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "PLAN-001",
+  "version": 1,
+  "status": "proposed",
+  "created_at": null,
+  "updated_at": null,
+  "goal_ref": {
+    "goal_id": "G-001",
+    "goal_version": 1,
+    "goal_status": "accepted",
+    "goal_file": ".cvpr/goal.yaml",
+    "required_criterion_ids": [
+      "AC-001"
+    ],
+    "protocol_ids": [
+      "EVAL-001"
+    ]
+  },
+  "development_base_ref": {
+    "project_state": "undetermined",
+    "project_root": "",
+    "repository_source": "",
+    "repository_version": "",
+    "target_model_or_system": "",
+    "goal_evidence_ref": ".cvpr/goal.yaml",
+    "user_confirmed": false
+  },
+  "planning_basis": {
+    "inspected_code_refs": [],
+    "confirmed_project_facts": [],
+    "assumptions": [],
+    "unresolved_questions": []
+  },
+  "global_boundaries": [],
+  "stages": [
+    {
+      "id": "STAGE-001",
+      "order": 1,
+      "name": "",
+      "objective": "",
+      "goal_criterion_refs": [
+        "AC-001"
+      ],
+      "dependencies": [],
+      "entry_conditions": [],
+      "code_context": [],
+      "stage_scope": [],
+      "excluded_scope": [],
+      "expected_outputs": [],
+      "stage_validation": {
+        "kind": "goal_verification",
+        "description": "",
+        "protocol_refs": [
+          "EVAL-001"
+        ],
+        "evaluation_objects": [],
+        "acceptance_criteria_refs": [
+          "AC-001"
+        ],
+        "acceptance_rules": [],
+        "evidence_artifacts": []
+      },
+      "user_decision_points": [],
+      "blocking_conditions": [],
+      "status": "proposed"
+    },
+    {
+      "id": "STAGE-002",
+      "order": 2,
+      "name": "",
+      "objective": "",
+      "goal_criterion_refs": [
+        "AC-001"
+      ],
+      "dependencies": [
+        "STAGE-001"
+      ],
+      "entry_conditions": [],
+      "code_context": [],
+      "stage_scope": [],
+      "excluded_scope": [],
+      "expected_outputs": [],
+      "stage_validation": {
+        "kind": "evidence_audit",
+        "description": "",
+        "protocol_refs": [],
+        "evaluation_objects": [],
+        "acceptance_criteria_refs": [
+          "AC-001"
+        ],
+        "acceptance_rules": [],
+        "evidence_artifacts": []
+      },
+      "user_decision_points": [],
+      "blocking_conditions": [],
+      "status": "proposed"
+    }
+  ],
+  "criterion_coverage": [
+    {
+      "goal_criterion_id": "AC-001",
+      "supporting_stage_ids": [],
+      "verification_stage_ids": [
+        "STAGE-001"
+      ],
+      "evidence_artifacts": []
+    }
+  ],
+  "someagents_review": {
+    "mode": "B",
+    "status": "not_started",
+    "final_verdict": "pending",
+    "input_plan_version": 1,
+    "role_reviews": [],
+    "blocking_issues": [],
+    "resolved_issues": [],
+    "evidence_refs": []
+  },
+  "open_questions": [
+    {
+      "question": "完成多 Agent 审查并与用户确认阶段计划",
+      "blocking": true,
+      "status": "open"
+    }
+  ],
+  "user_confirmation": {
+    "status": "pending",
+    "confirmed_at": null,
+    "confirmed_by": null,
+    "evidence_ref": null
+  },
+  "supersedes": null
+}

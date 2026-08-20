@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Reproducibility"
+  short_description: "清点并审计AI科研复现材料、可用性声明与发布准备流程"
+  default_prompt: "使用 $cvpr-reproducibility 审计当前研究的代码、数据、模型与复现材料，并生成可追溯的可用性声明。"

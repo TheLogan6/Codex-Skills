@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "EXEC-001",
+  "status": "proposed",
+  "project_root": ".",
+  "workspace_root": "cvpr_workspace",
+  "goal_ref": {
+    "goal_id": "G-001",
+    "goal_version": 1,
+    "goal_file": ".cvpr/goal.yaml"
+  },
+  "plan_ref": {
+    "plan_id": "PLAN-001",
+    "plan_version": 1,
+    "plan_file": ".cvpr/plan.yaml"
+  },
+  "research_profile": {
+    "kind": "undetermined",
+    "required_entry_roles": []
+  },
+  "directory_contract": {
+    "checks": "cvpr_workspace/checks",
+    "entrypoints": "cvpr_workspace/entrypoints",
+    "goal_evaluation": "cvpr_workspace/goal_evaluation",
+    "configs": "cvpr_workspace/configs",
+    "analysis": "cvpr_workspace/analysis"
+  },
+  "entries": [],
+  "updated_at": null
+}

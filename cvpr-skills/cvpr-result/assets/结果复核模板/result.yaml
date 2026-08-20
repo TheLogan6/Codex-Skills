@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "result_id": "RESULT-001",
+  "version": 1,
+  "status": "proposed",
+  "created_at": null,
+  "updated_at": null,
+  "do_assessment_ref": {
+    "goal_id": "G-001",
+    "goal_version": 1,
+    "state_file": ".cvpr/state.yaml",
+    "assessment_status": "indeterminate",
+    "audited_at": null,
+    "evidence_refs": []
+  },
+  "frozen_evidence": {
+    "snapshot_id": "",
+    "frozen_at": null,
+    "goal_ref": ".cvpr/goal.yaml",
+    "plan_ref": ".cvpr/plan.yaml",
+    "code_refs": [],
+    "run_ids": [],
+    "result_artifacts": [],
+    "deviation_refs": []
+  },
+  "reviewer_reports": [],
+  "review_consensus": {
+    "status": "pending",
+    "do_verdict_confirmed": null,
+    "verdict": "pending",
+    "blocking_issues": [],
+    "reconciled_disagreements": [],
+    "evidence_refs": []
+  },
+  "route": "pending",
+  "idea_feedback": null,
+  "statistics_artifacts": [],
+  "figure_artifacts": [],
+  "user_presentation": {
+    "status": "pending",
+    "presented_at": null,
+    "evidence_ref": null
+  },
+  "user_confirmation": {
+    "status": "pending",
+    "confirmed_at": null,
+    "confirmed_by": null,
+    "evidence_ref": null
+  },
+  "supersedes": null
+}

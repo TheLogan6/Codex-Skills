@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Paper Analysis"
+  short_description: "对单篇或多篇 AI/ML/DL 种子论文做全文证据分析与共性问题凝练。"
+  default_prompt: "使用 $cvpr-paper-analysis 分析给定种子论文，区分事实、作者主张与分析推断，并输出可定位的问题证据单元。"

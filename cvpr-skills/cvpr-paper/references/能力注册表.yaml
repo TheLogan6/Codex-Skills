@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "router": "cvpr-paper",
+  "invocation": {
+    "style": "natural-language",
+    "user_supplied_mode_forbidden": true,
+    "internal_modes": ["help", "status", "task", "compose", "full-draft"]
+  },
+  "capabilities": [
+    {
+      "skill": "cvpr-writing",
+      "kind": "paper-atomic",
+      "intents": ["论证主线", "论文提纲", "章节写作", "完整初稿", "证据化修订"],
+      "requires": ["研究 Claim", "可定位证据", "论断边界"],
+      "produces": ["论文正文", "章节结构", "Claim—正文映射", "术语与符号更新"],
+      "may_write": true,
+      "forbidden": ["编造实验", "检索文献", "重算统计", "绘图", "LaTeX 排版", "科学审稿"]
+    },
+    {
+      "skill": "cvpr-citation",
+      "kind": "paper-atomic",
+      "intents": ["插入引用", "核对引用支持", "引用覆盖", "维护 BibTeX"],
+      "requires": ["待引用论断", "已核验文献注册表或引用文件"],
+      "produces": ["带引用正文", "引用支持矩阵", "引用覆盖报告", "更新后的引用文件"],
+      "may_write": true,
+      "forbidden": ["凭记忆造引文", "把相关性当支持性"]
+    },
+    {
+      "skill": "cvpr-academic-search",
+      "kind": "paper-atomic",
+      "intents": ["缺少文献", "检索相关工作", "核验论文身份", "补充引用文件"],
+      "requires": ["检索问题", "检索截止日", "纳入排除标准"],
+      "produces": ["文献注册表", "问题状态矩阵", "BibTeX", "RIS", "NBIB"],
+      "may_write": true,
+      "forbidden": ["未经核验的元数据", "伪造引用"]
+    },
+    {
+      "skill": "cvpr-paper-analysis",
+      "kind": "paper-atomic",
+      "intents": ["精读参考论文", "分析论文方法", "比较多篇种子论文", "提取可迁移方法"],
+      "requires": ["论文正文或可核验全文来源", "分析问题"],
+      "produces": ["全文分析", "问题证据单元", "方法与实验边界"],
+      "may_write": true,
+      "forbidden": ["用摘要替代全文分析", "用仓库替代论文正文", "编造论文内容"]
+    },
+    {
+      "skill": "cvpr-statistics",
+      "kind": "paper-atomic",
+      "intents": ["整理实验数据", "复算指标", "统计分析", "结果表"],
+      "requires": ["冻结 Run", "指标定义", "实验单位"],
+      "produces": ["结构化数据", "统计报告", "结果表", "图形源数据"],
+      "may_write": true,
+      "forbidden": ["修改原始结果", "决定 Goal", "新增实验 Run"]
+    },
+    {
+      "skill": "cvpr-figure",
+      "kind": "paper-atomic",
+      "intents": ["绘制实验图", "修改论文图", "图形 QA", "定性多面板"],
+      "requires": ["已审核结构化数据", "图形 Claim", "明确后端"],
+      "produces": ["绘图代码", "源数据", "可编辑图形", "渲染 QA"],
+      "may_write": true,
+      "forbidden": ["修改数据", "重新定义统计", "用探索性图替代正式图"]
+    },
+    {
+      "skill": "cvpr-reproducibility",
+      "kind": "paper-atomic",
+      "intents": ["复现清单", "代码数据模型可用性", "匿名仓库准备", "许可证与访问限制"],
+      "requires": ["项目仓库", "Run 与配置", "数据模型来源"],
+      "produces": ["复现清单", "可用性声明", "发布材料计划", "缺口与风险"],
+      "may_write": true,
+      "forbidden": ["伪造链接", "伪造许可证", "伪造公开状态", "泄露敏感材料"]
+    },
+    {
+      "skill": "cvpr-polishing",
+      "kind": "paper-atomic",
+      "intents": ["学术润色", "中文转英文", "段落逻辑", "术语一致"],
+      "requires": ["现有稿件", "受保护事实", "术语账本"],
+      "produces": ["修订稿", "修改说明", "事实保护核对"],
+      "may_write": true,
+      "forbidden": ["改变数字", "扩大 Claim", "改变证据强度", "LaTeX 布局"]
+    },
+    {
+      "skill": "cvpr-humanizer",
+      "kind": "paper-atomic",
+      "intents": ["自然化表达", "降低 AI 痕迹", "第一人称作者声音"],
+      "requires": ["待改文本", "受保护事实"],
+      "produces": ["事实锁定的第一人称文本"],
+      "may_write": true,
+      "forbidden": ["修改事实", "虚构团队经历", "改变引用与数字"]
+    },
+    {
+      "skill": "cvpr-latex",
+      "kind": "paper-atomic",
+      "intents": ["会议模板", "LaTeX 组装", "匿名化", "编译", "版面 QA"],
+      "requires": ["目标 venue 与 track", "已核验官方模板", "稿件与图表"],
+      "produces": ["可编译源码", "PDF", "编译日志", "版面审计"],
+      "may_write": true,
+      "forbidden": ["静默套用通用模板", "为过页删除科学内容", "改写研究结论"]
+    },
+    {
+      "skill": "cvpr-paper-audit",
+      "kind": "paper-atomic",
+      "intents": ["全文一致性", "数字核对", "图表引用核对", "完整性审计"],
+      "requires": ["冻结稿件", "论文账本", "实验与复现产物"],
+      "produces": ["带位置问题清单", "严重性", "证据", "责任 Skill 与建议路由"],
+      "may_write": true,
+      "forbidden": ["擅自修稿", "作会议录用判断", "替代科学审稿"]
+    },
+    {
+      "skill": "cvpr-reviewer",
+      "kind": "paper-atomic",
+      "intents": ["投稿前审稿", "新颖性评估", "技术与实验风险", "venue fit"],
+      "requires": ["冻结稿件快照", "目标 venue 或明确通用评审", "统一评审协议"],
+      "produces": ["三份独立报告", "跨审稿综合", "未解决风险"],
+      "may_write": true,
+      "forbidden": ["冒充编辑", "保证录用", "虚构审稿人身份", "直接写 rebuttal"]
+    },
+    {
+      "skill": "cvpr-someagents",
+      "kind": "support-atomic",
+      "intents": ["多 Agent 编排"],
+      "requires": ["任务目标", "模式", "输入包", "输出契约"],
+      "produces": ["多 Agent 结果与整合记录"],
+      "may_write": true,
+      "forbidden": ["自行定义论文审稿标准"]
+    },
+    {
+      "skill": "cvpr-do",
+      "kind": "upstream-route",
+      "intents": ["需要新实验", "需要新消融", "需要新增验证 Run", "实现或实验修复"],
+      "requires": ["已确认 Plan 或修复目标"],
+      "produces": ["代码与 Run 证据", "新的 Goal 判定"],
+      "may_write": true,
+      "forbidden": ["由论文文字替代真实实验"]
+    },
+    {
+      "skill": "cvpr-result",
+      "kind": "upstream-route",
+      "intents": ["新实验完成后重新复核", "Result 快照变化", "DO 判定需要二次检查"],
+      "requires": ["cvpr-do 最终判定", "冻结证据包"],
+      "produces": ["三审结果复核", "新的论文路由快照"],
+      "may_write": true,
+      "forbidden": ["改写 DO 的 Goal 判定", "绕过三位独立审稿人"]
+    },
+    {
+      "skill": "cvpr-plan",
+      "kind": "upstream-route",
+      "intents": ["需要新增实验阶段", "需要重排阶段计划", "现有 Plan 未覆盖必要验证"],
+      "requires": ["已确认 Goal", "用户讨论与确认"],
+      "produces": ["新的阶段计划与节点验收标准"],
+      "may_write": true,
+      "forbidden": ["用原子命令替代阶段计划", "未讨论即写入最终计划"]
+    },
+    {
+      "skill": "cvpr-goal",
+      "kind": "upstream-route",
+      "intents": ["改变评测协议", "改变验收判据", "改变代码库基础"],
+      "requires": ["用户讨论与确认"],
+      "produces": ["新的 Goal 契约"],
+      "may_write": true,
+      "forbidden": ["静默改写既有 Goal"]
+    },
+    {
+      "skill": "cvpr-start",
+      "kind": "upstream-route",
+      "intents": ["结果不再支持 IDEA", "需要重新构思研究方向"],
+      "requires": ["失败证据包", "有效 .cvpr/start.yaml 中的全部历史候选 IDEA"],
+      "produces": ["新一轮候选 IDEA 与用户确认"],
+      "may_write": true,
+      "forbidden": ["自动替用户选择 IDEA"]
+    }
+  ]
+}

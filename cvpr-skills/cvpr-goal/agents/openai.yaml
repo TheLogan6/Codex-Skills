@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Goal"
+  short_description: "确认研究代码基础并确定领域匹配的最终核验契约与验收条件"
+  default_prompt: "使用 $cvpr-goal 为已确认的研究 IDEA 确认开发代码库与版本，并确定核验实现、基线、判据和最终验收条件。"

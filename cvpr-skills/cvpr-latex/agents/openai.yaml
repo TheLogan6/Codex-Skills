@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR LaTeX"
+  short_description: "管理AI科研论文官方模板、编译、匿名化与版面质量审计"
+  default_prompt: "使用 $cvpr-latex 按已核验的目标会议官方模板组装论文、编译 PDF 并完成版面审计。"

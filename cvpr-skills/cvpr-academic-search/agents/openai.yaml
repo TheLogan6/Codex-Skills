@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Academic Search"
+  short_description: "检索并核验 AI/ML/DL 文献，控制时效性并维护引用文件。"
+  default_prompt: "使用 $cvpr-academic-search 围绕研究问题补充检索并核验文献，输出问题状态矩阵及 BibTeX、RIS、NBIB 引用文件。"

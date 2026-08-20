@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Plan"
+  short_description: "结合真实代码将科研 IDEA 拆分为可验收的有序阶段计划"
+  default_prompt: "使用 $cvpr-plan 结合已确认的 Goal 和真实代码库，形成经多 Agent 审查和用户确认的阶段计划。"

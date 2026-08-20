@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Statistics"
+  short_description: "可复现地处理科研实验数据、统计检验并输出可追溯结果表格"
+  default_prompt: "使用 $cvpr-statistics 从冻结的实验运行中生成可追溯统计结果和论文表格源数据。"

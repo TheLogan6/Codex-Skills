@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "PA-001",
+  "version": 1,
+  "status": "proposed",
+  "created_at": null,
+  "updated_at": null,
+  "snapshot": {
+    "snapshot_id": "",
+    "frozen_at": null,
+    "immutable": true,
+    "manifest_digest": "",
+    "files": []
+  },
+  "scope": {
+    "level": "full",
+    "manuscript_refs": [],
+    "result_snapshot_ref": null,
+    "venue": null,
+    "venue_requirements_ref": null,
+    "missing_materials": []
+  },
+  "ledger_refs": {
+    "claims": null,
+    "numbers": null,
+    "citations": null,
+    "terminology": null,
+    "runs": [],
+    "statistics": [],
+    "figures": [],
+    "reproducibility": []
+  },
+  "coverage": [],
+  "checks": [],
+  "findings": [],
+  "summary": {
+    "conclusion": "pending",
+    "blocking_finding_ids": [],
+    "major_finding_ids": [],
+    "minor_finding_ids": [],
+    "not_assessable_categories": [],
+    "recommended_route": "pending",
+    "limitations": []
+  },
+  "supersedes": null
+}

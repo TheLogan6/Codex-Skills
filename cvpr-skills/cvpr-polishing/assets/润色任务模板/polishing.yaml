@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "task_id": "POLISHING-001",
+  "status": "proposed",
+  "mode": "polish",
+  "source_context": {
+    "project_mode": "standalone",
+    "snapshot_ref": null,
+    "claims_authority_ref": null,
+    "scope_note": "仅依据用户提供的源文执行语言修订。"
+  },
+  "axes": {
+    "section": "introduction",
+    "source_language": "english",
+    "target_language": "english",
+    "venue": "generic"
+  },
+  "source_text_ref": "",
+  "output_text_ref": "",
+  "fact_locks": [],
+  "terminology_checks": [],
+  "humanizer": {
+    "used": false,
+    "skill": null,
+    "fact_lock_revalidated": false,
+    "artifact_ref": null
+  },
+  "fact_lock_status": "pending",
+  "unresolved_scientific_issues": [],
+  "output_artifacts": [],
+  "blockers": []
+}

@@ -1,0 +1,42 @@
+PMID- 27898976
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20170208
+LR  - 20220409
+IS  - 1538-3598 (Electronic)
+IS  - 0098-7484 (Linking)
+VI  - 316
+IP  - 22
+DP  - 2016 Dec 13
+TI  - Development and Validation of a Deep Learning Algorithm for Detection of Diabetic
+      Retinopathy in Retinal Fundus Photographs.
+PG  - 2402-2410
+LID - 10.1001/jama.2016.17216 [doi]
+AU  - Gulshan V
+AU  - Peng L
+AU  - Coram M
+AU  - Stumpe MC
+AU  - Wu D
+AU  - Narayanaswamy A
+AU  - Venugopalan S
+AU  - Widner K
+AU  - Madams T
+AU  - Cuadros J
+AU  - Kim R
+AU  - Raman R
+AU  - Nelson PC
+AU  - Mega JL
+AU  - Webster DR
+LA  - eng
+PT  - Journal Article
+PT  - Validation Study
+PL  - United States
+TA  - JAMA
+JT  - JAMA
+JID - 7501160
+MH  - *Algorithms
+MH  - *Machine Learning
+MH  - *Neural Networks, Computer
+AID - 10.1001/jama.2016.17216 [doi]
+PST - ppublish
+SO  - JAMA. 2016 Dec 13;316(22):2402-2410. doi: 10.1001/jama.2016.17216.

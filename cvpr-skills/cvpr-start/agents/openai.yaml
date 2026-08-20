@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Start"
+  short_description: "从种子范围或论文启动证据驱动的 AI 科研 IDEA 收敛流程。"
+  default_prompt: "使用 $cvpr-start 从研究范围或种子论文出发，完成全文分析、补充检索、候选 IDEA 审查与五轮内收敛。"

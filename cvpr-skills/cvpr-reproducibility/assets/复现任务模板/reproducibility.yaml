@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "REPRO-001",
+  "version": 1,
+  "status": "proposed",
+  "mode": "inventory",
+  "source_snapshot": {
+    "snapshot_id": "",
+    "result_ref": ".cvpr/result.yaml",
+    "result_status": null,
+    "frozen": false,
+    "freshness": "current"
+  },
+  "scope": {
+    "paper_ref": "",
+    "venue": "",
+    "track": "",
+    "year": null,
+    "submission_stage": null
+  },
+  "materials": [],
+  "category_assessments": [],
+  "claim_reproduction_chains": [],
+  "availability_assertions": [],
+  "statements": [],
+  "release_packages": [],
+  "gaps": [],
+  "risks": [],
+  "outputs": [],
+  "user_confirmation": {
+    "confirmed": false,
+    "confirmed_at": null
+  },
+  "supersedes": null
+}

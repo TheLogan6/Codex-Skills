@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "assembly_id": "LATEX-001",
+  "version": 1,
+  "status": "proposed",
+  "mode": "assemble",
+  "source_snapshot": {
+    "snapshot_id": "",
+    "result_ref": ".cvpr/result.yaml",
+    "result_status": null,
+    "frozen": false,
+    "freshness": "current"
+  },
+  "target": {
+    "venue": "",
+    "track": "",
+    "year": null,
+    "submission_stage": null,
+    "anonymity_requirement": null,
+    "rules_verified": false,
+    "rules_verified_at": null,
+    "official_source_refs": [],
+    "page_limit": null,
+    "page_limit_scope": ""
+  },
+  "template": {
+    "verified": false,
+    "source_ref": "",
+    "version": "",
+    "checksum": "",
+    "local_root": ""
+  },
+  "source_assets": [],
+  "content_integrity": {
+    "content_snapshot_refs": [],
+    "layout_changes": [],
+    "unauthorized_content_changes": []
+  },
+  "build": {
+    "engine": "",
+    "commands": [],
+    "return_code": null,
+    "success": false,
+    "log_refs": [],
+    "error_count": null,
+    "unresolved_reference_count": null,
+    "pdf_ref": "",
+    "page_count": null
+  },
+  "anonymization": {
+    "required": null,
+    "checks": [],
+    "blockers": []
+  },
+  "layout_qa": {
+    "rendered": false,
+    "render_dir": "",
+    "contact_sheet_ref": "",
+    "pages_inspected": [],
+    "all_pages_inspected": false,
+    "page_limit_assessment": {
+      "compliant": null,
+      "counted_pages": null,
+      "scope": "",
+      "evidence_refs": []
+    },
+    "issues": [],
+    "blockers": []
+  },
+  "outputs": [],
+  "user_confirmation": {
+    "confirmed": false,
+    "confirmed_at": null
+  },
+  "supersedes": null
+}

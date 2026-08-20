@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "project_id": "research-project",
+  "project_name": "AI-ML-DL 研究项目",
+  "project_root": ".",
+  "research_domain": null,
+  "research_type": null,
+  "target_venue": null,
+  "working_scope": null,
+  "working_problem": null,
+  "working_idea": null,
+  "objectives": [],
+  "success_criteria": [],
+  "out_of_scope": [],
+  "resources": {
+    "papers": [],
+    "code": [],
+    "data": [],
+    "compute": [],
+    "time_constraints": []
+  },
+  "history_reconstruction": {
+    "status": "not-needed",
+    "verified_items": [],
+    "reported_items": [],
+    "unknowns": [],
+    "conflicts": []
+  }
+}

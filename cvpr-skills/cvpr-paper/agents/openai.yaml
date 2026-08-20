@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR 论文路由"
+  short_description: "通过自然语言识别并路由完整 AI/ML 论文工作请求"
+  default_prompt: "Use $cvpr-paper to understand my natural-language paper request and route it to the correct atomic research skills."

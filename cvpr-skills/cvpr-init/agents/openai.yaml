@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Init"
+  short_description: "初始化、接入或回读 AI/ML/DL 长期科研项目状态"
+  default_prompt: "Use $cvpr-init to inspect my research project, discuss its current state, and draft the next atomic task."

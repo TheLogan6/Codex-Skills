@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Writing"
+  short_description: "依据已冻结研究证据规划和撰写通用 AI/ML/DL 论文"
+  default_prompt: "Use $cvpr-writing to draft an evidence-grounded AI/ML/DL paper section."

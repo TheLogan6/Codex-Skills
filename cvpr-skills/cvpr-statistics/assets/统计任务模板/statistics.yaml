@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "STAT-001",
+  "version": 1,
+  "status": "proposed",
+  "mode": "result_processing",
+  "purpose": "",
+  "source_snapshot_ref": "",
+  "input_run_ids": [],
+  "included_run_ids": [],
+  "excluded_runs": [],
+  "experimental_unit": {
+    "name": "",
+    "definition": "",
+    "independence_basis": ""
+  },
+  "grouping_factors": [],
+  "metrics": [],
+  "statistical_methods": [],
+  "data_integrity": {
+    "raw_immutable": true,
+    "missing_policy": "",
+    "outlier_policy": "",
+    "selection_policy": "",
+    "checks": [],
+    "evidence_refs": []
+  },
+  "outputs": [],
+  "provenance": {
+    "analysis_code_refs": [],
+    "config_refs": [],
+    "environment_refs": [],
+    "generated_at": null,
+    "evidence_refs": []
+  },
+  "supersedes": null
+}

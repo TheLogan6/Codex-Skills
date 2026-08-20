@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.1",
+  "phase": "intake",
+  "phase_status": "running",
+  "last_reviewed_at": null,
+  "active_plan": null,
+  "current_stage_id": null,
+  "last_accepted_stage_id": null,
+  "stage_statuses": [],
+  "current_atomic_task_id": null,
+  "last_accepted_task_id": null,
+  "execution_workspace": {
+    "manifest_file": "cvpr_workspace/入口清单.yaml",
+    "status": "not_created"
+  },
+  "goal_assessment": null,
+  "confirmed_findings": [],
+  "open_questions": [],
+  "blockers": [],
+  "active_deviations": [],
+  "next_task": null
+}

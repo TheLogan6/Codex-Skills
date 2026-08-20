@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Someagents"
+  short_description: "面向科研与工程原子任务的通用多 Agent 编排与审计框架。"
+  default_prompt: "使用 $cvpr-someagents，根据任务依赖选择多 Agent 协作模式，完成并行分析、交叉审查或流水线编排。"

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "figure_id": "FIG-001",
+  "version": 1,
+  "status": "proposed",
+  "mode": "result_presentation",
+  "purpose": "",
+  "source_snapshot_ref": "",
+  "source_review_status": "unreviewed",
+  "backend": "undetermined",
+  "script_file": "",
+  "source_data_refs": [],
+  "source_run_ids": [],
+  "transform_refs": [],
+  "supported_claim_refs": [],
+  "panels": [],
+  "visual_integrity": {
+    "data_values_unchanged": true,
+    "scale_policy": "",
+    "zero_baseline_policy": "",
+    "uncertainty_definition": "",
+    "color_not_only": true,
+    "excluded_data": [],
+    "caption_scope": "",
+    "evidence_refs": []
+  },
+  "exports": [],
+  "qa": {
+    "render_inspected": false,
+    "labels_legible": false,
+    "no_clipping": false,
+    "scales_honest": false,
+    "statistics_match_source": false,
+    "noncolor_encoding_checked": false,
+    "evidence_refs": []
+  },
+  "supersedes": null
+}

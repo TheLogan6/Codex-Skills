@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Paper Audit"
+  short_description: "核对 AI/ML/DL 论文证据、数字与产物一致性"
+  default_prompt: "Use $cvpr-paper-audit to audit this manuscript against its frozen research evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Citation"
+  short_description: "核验论文论断的文献支持并维护引用、引用键与书目文件"
+  default_prompt: "Use $cvpr-citation to bind verified literature to manuscript claims."

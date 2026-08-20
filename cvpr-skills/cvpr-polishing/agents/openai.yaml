@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Polishing"
+  short_description: "在严格事实锁保护下润色或翻译 AI/ML/DL 论文"
+  default_prompt: "Use $cvpr-polishing to polish academic prose without changing scientific facts."

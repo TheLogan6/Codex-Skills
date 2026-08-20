@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Do"
+  short_description: "按确认计划执行科研代码、实验、证据记录与真实目标核验"
+  default_prompt: "使用 $cvpr-do 执行当前已确认阶段，保存可复现入口、运行证据并按 Goal 验收。"

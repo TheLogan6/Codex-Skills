@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.1",
+  "goal_id": "G-001",
+  "idea_id": "I-001",
+  "start_ref": {
+    "start_id": "START-001",
+    "version": 1,
+    "start_file": ".cvpr/start.yaml",
+    "idea_id": "I-001"
+  },
+  "version": 1,
+  "status": "proposed",
+  "created_at": null,
+  "updated_at": null,
+  "verification_subject": {
+    "research_claims": [
+      {
+        "id": "CLAIM-001",
+        "statement": ""
+      }
+    ],
+    "expected_observable_changes": [
+      {
+        "claim_id": "CLAIM-001",
+        "change": ""
+      }
+    ],
+    "verification_scope": [],
+    "excluded_scope": []
+  },
+  "development_base": {
+    "project_state": "undetermined",
+    "project_root": "",
+    "repository_url": "",
+    "repository_source": "",
+    "repository_source_type": "undetermined",
+    "branch": "",
+    "commit": "",
+    "version_or_snapshot": "",
+    "target_model_or_system": "",
+    "intended_change_scope": [],
+    "evaluation_compatibility": {
+      "protocol_ids": [],
+      "assessment": "",
+      "evidence_refs": []
+    },
+    "user_confirmed": false
+  },
+  "evaluation_protocols": [
+    {
+      "id": "EVAL-001",
+      "form": "other",
+      "source": "",
+      "version": "",
+      "implementation_or_protocol": "",
+      "evaluation_objects": [],
+      "conditions": [],
+      "result_artifacts": [],
+      "linked_claim_ids": [
+        "CLAIM-001"
+      ],
+      "user_confirmed": false
+    }
+  ],
+  "baseline": {
+    "source": "not_applicable",
+    "protocol_id": null,
+    "conditions": [],
+    "results": [],
+    "evidence_refs": [],
+    "not_applicable_reason": ""
+  },
+  "acceptance_criteria": [
+    {
+      "id": "AC-001",
+      "linked_claim_ids": [
+        "CLAIM-001"
+      ],
+      "measure_or_judgment": "",
+      "target_rule": "",
+      "target_value": null,
+      "evaluation_protocol_ids": [
+        "EVAL-001"
+      ],
+      "evaluation_condition": "",
+      "selection_rationale": "",
+      "source_refs": [],
+      "required": true,
+      "evidence_artifacts": []
+    }
+  ],
+  "validity_checks": [],
+  "boundary_constraints": [],
+  "diagnostic_observations": [],
+  "acceptance_logic": "",
+  "open_questions": [
+    {
+      "question": "确认开发代码库与版本、验证载体、目标判据和用户验收决定",
+      "blocking": true,
+      "status": "open"
+    }
+  ],
+  "required_artifacts": [],
+  "user_confirmation": {
+    "status": "pending",
+    "confirmed_at": null,
+    "confirmed_by": null,
+    "evidence_ref": null
+  },
+  "supersedes": null
+}

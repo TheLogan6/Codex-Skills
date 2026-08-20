@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Humanizer"
+  short_description: "在严格保护科研事实的前提下，将文字改写为自然的第一人称表达。"
+  default_prompt: "使用 $cvpr-humanizer，在不改变任何科研事实、数值或引文的前提下，将文本改写为自然的我或我们第一人称表达。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Reviewer"
+  short_description: "三位独立审稿人执行 AI/ML/DL 投稿前科学审查"
+  default_prompt: "Use $cvpr-reviewer to run a three-reviewer scientific assessment of this frozen manuscript."

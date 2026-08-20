@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CITATION-001",
+  "status": "proposed",
+  "source_context": {
+    "project_mode": "standalone",
+    "snapshot_ref": null,
+    "claims_authority_ref": null,
+    "manuscript_ref": "",
+    "scope_note": "仅核对用户提供的正文和已核验文献。"
+  },
+  "literature_registry_refs": [],
+  "bibliography_input_refs": [],
+  "literature_records": [],
+  "claims": [],
+  "bibliography_outputs": [],
+  "conflicts": [],
+  "needs_academic_search": [],
+  "output_artifacts": [],
+  "blockers": []
+}

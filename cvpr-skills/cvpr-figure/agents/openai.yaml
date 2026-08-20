@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR Figure"
+  short_description: "从已审核实验数据生成可复现、可编辑且证据诚实的科研图表"
+  default_prompt: "使用 $cvpr-figure 从已审核的实验数据生成可复现、可编辑并完成视觉核验的科研图表。"

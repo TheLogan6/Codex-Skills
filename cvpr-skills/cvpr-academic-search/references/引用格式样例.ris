@@ -1,0 +1,32 @@
+TY  - JOUR
+AU  - Gulshan V
+AU  - Peng L
+AU  - Coram M
+AU  - Stumpe MC
+AU  - Wu D
+AU  - Narayanaswamy A
+AU  - Venugopalan S
+AU  - Widner K
+AU  - Madams T
+AU  - Cuadros J
+AU  - Kim R
+AU  - Raman R
+AU  - Nelson PC
+AU  - Mega JL
+AU  - Webster DR
+TI  - Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs
+JO  - JAMA
+JA  - JAMA
+PY  - 2016
+VL  - 316
+IS  - 22
+SP  - 2402
+EP  - 2410
+DO  - 10.1001/jama.2016.17216
+UR  - https://doi.org/10.1001/jama.2016.17216
+KW  - Machine Learning
+KW  - Neural Networks, Computer
+AN  - PMID:27898976
+DB  - PubMed
+ER  -
+
