@@ -1,0 +1,4 @@
+interface:
+  display_name: "GPU Operator Optimization Engineer"
+  short_description: "用七本账编排 GPU 算子优化、专业路由与共享 diff 验收"
+  default_prompt: "使用 $gpu-operator-optimization-engineer 建立七本账，复用同级 llm-torch-profiler-analysis 的固定三表定位瓶颈，路由到合适的 GPU 专项 skill，并按共享 diff 门禁给出 ship、continue、stop 或 blocked。"

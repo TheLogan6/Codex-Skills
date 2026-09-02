@@ -1,0 +1,4 @@
+interface:
+  display_name: "视频部署 Bitwise 对齐"
+  short_description: "严格隔离两套视频部署，逐级定位并修复 Bitwise 差异"
+  default_prompt: "使用 $align-video-deployments-bitwise 对齐环境 A 与环境 B 的视频生成结果。"

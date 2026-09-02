@@ -1,0 +1,4 @@
+interface:
+  display_name: "Activation-Quant 融合工程"
+  short_description: "复现舍入边界，开发并严格验收激活量化融合算子"
+  default_prompt: "使用 $activation-quant-fusion-engineer 分析 activation 与低比特量化链路，编写或审查融合算子，并完成逐级数值 diff。"

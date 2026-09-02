@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indexed Pack/Reduce Fusion Engineer"
+  short_description: "分析并实现稳定分桶、索引合成、segment reduce 与终态布局融合"
+  default_prompt: "使用 $indexed-pack-reduce-fusion-engineer 分析索引数据链，分别判断 sort-pack 与 gather-reduce-layout 是否适用，设计最小实现并完成正确性、性能和 diff 验收。"

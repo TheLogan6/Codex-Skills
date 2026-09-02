@@ -1,0 +1,4 @@
+interface:
+  display_name: "GPU Offload & Prefetch Engineer"
+  short_description: "分析显存 live range、H2D、预取、驻留与双缓冲安全性"
+  default_prompt: "Use $gpu-offload-prefetch-engineer to analyze GPU memory live ranges and H2D traffic, implement the smallest safe offload/prefetch change, and validate correctness, performance, and peak-memory diffs."

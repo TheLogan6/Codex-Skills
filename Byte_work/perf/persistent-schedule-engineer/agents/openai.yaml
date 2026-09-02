@@ -1,0 +1,4 @@
+interface:
+  display_name: "Persistent Schedule Engineer"
+  short_description: "分析并实现 task/epoch/ring/device flags/topology 调度协议"
+  default_prompt: "Use $persistent-schedule-engineer to reconstruct the baseline schedule, design a safe task/epoch/ring/topology protocol, implement the smallest persistent candidate, and validate every level and the final diff."

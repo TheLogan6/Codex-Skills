@@ -1,0 +1,4 @@
+interface:
+  display_name: "NVFP4 Dispatch-Pack 工程"
+  short_description: "分析、实现并严格验收量化 dispatch 到 GEMM 的融合打包"
+  default_prompt: "使用 $nvfp4-dispatch-pack-engineer 分析 dispatch 数据流，编写或审查 NVFP4 pack 算子，并完成逐输出 diff 验收。"

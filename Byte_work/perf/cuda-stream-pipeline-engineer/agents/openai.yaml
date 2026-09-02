@@ -1,0 +1,4 @@
+interface:
+  display_name: "CUDA Stream Pipeline Engineer"
+  short_description: "分析并实现 chunk、Stream、Event、collective overlap 与生命周期安全"
+  default_prompt: "使用 $cuda-stream-pipeline-engineer 重建串行依赖图，设计 chunked CUDA stream pipeline，并以 collective 顺序、生命周期、trace、显存和 diff 门禁验收。"
