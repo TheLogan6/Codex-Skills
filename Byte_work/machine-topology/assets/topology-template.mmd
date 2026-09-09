@@ -1,0 +1,18 @@
+flowchart TB
+  subgraph server[Server — snapshot timestamp]
+    subgraph numa[NUMA N — logical CPU IDs from evidence]
+      mem[Local DRAM — capacity from evidence]
+      cpu[CPU socket / PCIe root complex]
+      sw[PCIe switch hierarchy — simplified; BDF anchor]
+      g0[GPU A — BDF]
+      g1[GPU B — BDF]
+      nic[NIC / RDMA functions — BDFs]
+      mem ---|Memory bus — rate unknown| cpu
+      cpu ---|PCIe generation x lanes — shared GB/s per direction; basis| sw
+      sw ---|PCIe generation x lanes — GB/s per direction; basis| g0
+      sw ---|PCIe generation x lanes — GB/s per direction; basis| g1
+      sw ---|NIC PCIe rate — shared if multifunction| nic
+    end
+  end
+  nic ---|Port rate in Gb/s — Ethernet or IB from evidence| network[External network — remote topology unknown]
+  note[All numbers need a basis: current / maximum / measured. Simplified bridges are not chip counts.]

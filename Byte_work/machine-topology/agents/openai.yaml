@@ -1,0 +1,4 @@
+interface:
+  display_name: "机器拓扑与通信带宽"
+  short_description: "核实 CPU、GPU、PCIe 与网卡连接，绘制含逐段带宽的机器架构图"
+  default_prompt: "使用 $machine-topology 核实当前机器拓扑，解释 H2D、P2P 和 RDMA 路径，并绘制标明逐段 PCIe 带宽及其依据的架构图。"
