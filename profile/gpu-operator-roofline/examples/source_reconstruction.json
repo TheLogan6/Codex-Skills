@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "title": "H800 group GEMM: source reconstruction, modeled traffic",
+  "device": "H800 (source assumptions; exact SKU not independently verified)",
+  "notes": "Source document revision 2189. No GPU measurements performed by this example. INT4 storage, INT8 MMA, BF16 output. Excludes scale/metadata/padding; cold once-load traffic model. Do not infer actual bandwidth saturation.",
+  "roofs": [
+    {
+      "id": "source_int8_hbm",
+      "label": "Source-assumed INT8 / HBM",
+      "op_kind": "integer",
+      "path": "dense INT8 Tensor MMA",
+      "layer": "HBM",
+      "kind": "spec",
+      "compute_tops": 1979,
+      "bandwidth_gbps": 3350,
+      "source": "User-provided Seedance2.5 H800 profile, revision 2189; assumed values, not independently verified SKU specs. https://bytedance.larkoffice.com/wiki/EhKqwQ5SVinoIRkbeADcCtTwnbI"
+    }
+  ],
+  "cases": [
+    {
+      "id": "figure_reconstruction",
+      "label": "Figure description: M=234400",
+      "scope": "one group GEMM, one device; uniform groups are a toy reconstruction",
+      "path": "dense INT8 Tensor MMA",
+      "op_kind": "integer",
+      "work_basis": "useful",
+      "work": {"kind": "grouped_gemm", "groups": [{"m": 293, "n": 4096, "k": 1536, "count": 800}]},
+      "time_ms": [11.5212288],
+      "timing_kind": "derived",
+      "timing_source": "Derived as F / (256e12) from source figure description; NOT a raw timing sample",
+      "cache_policy": "once-load cold model; actual source cache behavior unavailable",
+      "roof_ids": ["source_int8_hbm"],
+      "byte_models": [
+        {
+          "id": "once_load",
+          "kind": "modeled",
+          "layer": "HBM",
+          "source": "Independent reconstruction: all 800 groups active, A and packed W read once, BF16 C written once; no scale/metadata/spill/workspace",
+          "ledger": [
+            {"name": "A: total_M*K INT8", "elements": 360038400, "storage_bits": 8, "reads": 1, "writes": 0},
+            {"name": "W: 800*N*K packed INT4", "elements": 5033164800, "storage_bits": 4, "reads": 1, "writes": 0},
+            {"name": "C: total_M*N BF16", "elements": 960102400, "storage_bits": 16, "reads": 0, "writes": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "log_call_1240",
+      "label": "Log call 1240: M=409600",
+      "scope": "one group GEMM call, rank 0; toy uniform groups preserve total M",
+      "path": "dense INT8 Tensor MMA",
+      "op_kind": "integer",
+      "work_basis": "useful",
+      "work": {"kind": "grouped_gemm", "groups": [{"m": 512, "n": 4096, "k": 1536, "count": 800}]},
+      "time_ms": [21.855],
+      "timing_kind": "measured",
+      "timing_source": "Single reported call=1240 from source document; source measurement protocol and repeat samples unavailable; no new measurement",
+      "cache_policy": "unknown in source log; byte ledger assumes cold once-load",
+      "roof_ids": ["source_int8_hbm"],
+      "byte_models": [
+        {
+          "id": "once_load",
+          "kind": "modeled",
+          "layer": "HBM",
+          "source": "Independent once-load model for log shape, excluding metadata and extra traffic; not the same shape as the figure",
+          "ledger": [
+            {"name": "A INT8", "elements": 629145600, "storage_bits": 8, "reads": 1, "writes": 0},
+            {"name": "W packed INT4", "elements": 5033164800, "storage_bits": 4, "reads": 1, "writes": 0},
+            {"name": "C BF16", "elements": 1677721600, "storage_bits": 16, "reads": 0, "writes": 1}
+          ]
+        }
+      ]
+    }
+  ]
+}

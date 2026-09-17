@@ -1,0 +1,4 @@
+interface:
+  display_name: "模型组件内部计算图"
+  short_description: "将 Engram 等组件展开为算子链、分支和张量形状，并把公式对应到计算位置。"
+  default_prompt: "请使用 $model-component-diagram，把我提供的组件画成带张量维度、分支和公式对应的内部计算解释图。"

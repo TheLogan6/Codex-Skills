@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "title": "Synthetic portability example: theory vs calibration",
+  "device": "Example accelerator (not a real GPU measurement)",
+  "roofs": [
+    {"id": "spec", "label": "Synthetic spec", "op_kind": "float", "path": "FP32 vector", "layer": "DRAM", "kind": "spec", "compute_tops": 10, "bandwidth_gbps": 100, "source": "Synthetic test constants, not a product datasheet"},
+    {"id": "calibrated", "label": "Synthetic calibration", "op_kind": "float", "path": "FP32 vector", "layer": "DRAM", "kind": "calibrated", "compute_tops": 8, "bandwidth_gbps": 80, "source": "Synthetic test constants, NOT a measured calibration"}
+  ],
+  "cases": [
+    {
+      "id": "vector_add", "label": "Vector add",
+      "scope": "one invocation", "path": "FP32 vector", "op_kind": "float", "work_basis": "useful",
+      "work": {"kind": "elementwise", "elements": 1000000, "ops_per_element": 1},
+      "time_ms": [0.199, 0.200, 0.201, 0.200, 0.202],
+      "timing_kind": "synthetic", "timing_source": "Synthetic samples for functional testing",
+      "cache_policy": "synthetic cold DRAM model", "roof_ids": ["spec", "calibrated"],
+      "e2e_fraction": 0.4, "e2e_fraction_source": "Synthetic sequential critical path assumption",
+      "byte_models": [{"id": "logical_io", "kind": "modeled", "layer": "DRAM", "source": "Two FP32 arrays read, one FP32 array written once", "ledger": [{"name": "A+B->C", "elements": 1000000, "storage_bits": 32, "reads": 2, "writes": 1}]}]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "GPU Operator Roofline"
+  short_description: "算子 Roofline 建模、实测绘图、瓶颈验证与优化空间评估"
+  default_prompt: "使用 $gpu-operator-roofline 分析目标硬件上的算子，核对操作数、流量、峰值和计时口径，绘制 Roofline 并给出有证据的瓶颈判断与优化实验。"

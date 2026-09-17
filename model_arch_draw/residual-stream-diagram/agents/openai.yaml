@@ -1,0 +1,4 @@
+interface:
+  display_name: "多路残差与执行时序图"
+  short_description: "解释 mHC 等多路残差机制，展示合并、子层计算、写回和系数传递时序。"
+  default_prompt: "请使用 $residual-stream-diagram，画出所给模型的多路残差数据流和系数传递时序。"

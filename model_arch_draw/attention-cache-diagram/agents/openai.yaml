@@ -1,0 +1,4 @@
+interface:
+  display_name: "Attention 与缓存机制图"
+  short_description: "展开 Attention、稀疏选点与缓存复用，区分地址、共享数据和本层计算。"
+  default_prompt: "请使用 $attention-cache-diagram，解释所给模型的 Attention、索引与 KV Cache 关系并绘图。"

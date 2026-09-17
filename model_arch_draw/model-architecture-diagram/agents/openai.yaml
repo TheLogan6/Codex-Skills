@@ -1,0 +1,4 @@
+interface:
+  display_name: "模型整体架构图"
+  short_description: "绘制新模型主干与辅助模块关系，清楚展示层组、输入输出和缓存归属。"
+  default_prompt: "请使用 $model-architecture-diagram，阅读我提供的模型材料，画一张清晰的整体架构解释图。"
